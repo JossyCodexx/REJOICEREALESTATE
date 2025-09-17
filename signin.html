@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+  <title>Sign In - GoldenGate Estates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #004080;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* Page Title */
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      color: #004080;
+    }
+
+    /* Sign In Form */
+    form {
+      max-width: 400px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #004080;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #003060;
+    }
+
+    .extra-links {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    .extra-links a {
+      color: #004080;
+      text-decoration: none;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  
+<nav class="gg-nav">
+  <div class="container-narrow">
+     <img src="./images/logo2.png" alt="">
+    <div class="gg-links" id="ggLinks">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="agents.html">Agents</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="gg-cta">
+      <a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i> Sign In</a>
+      <a href="List-Property.html" class="login-btn primary"><i class="fa-solid fa-plus"></i> List Property</a>
+    </div>
+    <button><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+  <h1>Sign In</h1>
+
+  <form>
+    <label>Email:
+      <input type="email" placeholder="Enter your email" required>
+    </label>
+    <label>Password:
+      <input type="password" placeholder="Enter your password" required>
+    </label>
+    <button type="submit">Sign In</button>
+    <div class="extra-links">
+      <p><a href="#">Forgot Password?</a></p>
+      <p>Don’t have an account? <a href="signup.html">Create one</a></p>
+    </div>
+  </form>
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <!-- Company Info -->
+    <div class="footer-col">
+      <img src="logo.png" alt="GoldenGate Estates" class="footer-logo">
+      <p>GoldenGate Estates is your trusted partner in real estate, providing sales, rentals, management, and investment opportunities tailored to your needs.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="list-property.html">List Property</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Our Services</h3>
+      <ul>
+        <li>Property Sales</li>
+        <li>Property Rentals</li>
+        <li>Mortgage Assistance</li>
+        <li>Property Management</li>
+        <li>Real Estate Consultancy</li>
+        <li>Interior Design</li>
+        <li>Valuation Services</li>
+        <li>Construction</li>
+        <li>Legal Support</li>
+        <li>Investment Opportunities</li>
+      </ul>
+    </div>
+<!-- Add this in <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Social Media -->
+<div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 GoldenGate Estates. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background: #222;
+    color: #ddd;
+    padding: 50px 20px 20px;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .footer-col h3 {
+    color: #e67e22;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-col ul li {
+    margin: 8px 0;
+  }
+  .footer-col ul li a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  .footer-col ul li a:hover {
+    color: #e67e22;
+  }
+  .footer-logo {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .social-links a {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+  }
+  .social-links img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+  }
+  .social-links img:hover {
+    transform: scale(1.2);
+    filter: brightness(1) invert(0) sepia(1) hue-rotate(20deg) saturate(5);
+  }
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+
+
+
+  
+
+    .social-links a {
+  display: inline-block;
+  margin: 0 10px 8px 0;
+  font-size: 24px;
+  color: #ddd;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  color: #e67e22;
+  transform: scale(1.2);
+}
+
+</style>
+
+
+
+
+
+
+
+
+</body>
+</html>
+

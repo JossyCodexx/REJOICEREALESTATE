@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Details - GoldenGate Estates</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f8f8; color:#333; }
+  .container { max-width: 1000px; margin: 50px auto; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+  .slider { position: relative; overflow: hidden; height: 500px; }
+  .slides { display: flex; transition: transform 0.5s ease-in-out; }
+  .slides img { width: 100%; flex-shrink: 0; object-fit: cover; }
+  .prev, .next {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: rgba(0,0,0,0.5); color: #fff; border: none;
+    padding: 10px 15px; cursor: pointer; border-radius: 50%; font-size: 20px; z-index: 2;
+  }
+  .prev { left: 15px; } .next { right: 15px; }
+  .details { padding: 20px; }
+  .details h2 { margin-top: 0; }
+  .details p { margin: 10px 0; }
+  .back-btn { display:inline-block; padding:10px 15px; background:#e67e22; color:#fff; text-decoration:none; border-radius:5px; margin-top:20px; }
+  .back-btn:hover { background:#cf6c1e; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="slider">
+    <button class="prev" onclick="slideLeft()">&#10094;</button>
+    <div class="slides" id="slides">
+      <!-- Images will be loaded dynamically -->
+    </div>
+    <button class="next" onclick="slideRight()">&#10095;</button>
+  </div>
+
+  <div class="details">
+    <h2 id="propertyTitle">Property Title</h2>
+    <p id="propertyInfo">Property Info</p>
+    <p id="propertyPrice">Price: $0</p>
+    <a href="index.html" class="back-btn">Back to Listings</a>
+  </div>
+</div>
+
+<script>
+  const properties = [
+    {id:1, title:"Luxury Villa", info:"4 Bed • 3 Bath • 3500 sqft", price:"$1,200,000", images:["images/blog1-1.jpg","images/blog1-2.jpg","images/blog1-3.jpg","images/blog1-4.jpg"]},
+    {id:2, title:"Modern Apartment", info:"2 Bed • 2 Bath • 1200 sqft", price:"$450,000", images:["images/blog2-2.jpg","images/blog2-3.jpg","images/blog2-4.jpg","images/blog2-4.jpg"]},
+    {id:3, title:"Cozy Cottage", info:"3 Bed • 2 Bath • 1600 sqft", price:"$350,000", images:["images/blog3-3.jpg","images/blog3-2.jpg","images/blog3-3.jpg","images/blog3-4.jpg"]},
+    {id:4, title:"Beach House", info:"5 Bed • 4 Bath • 5000 sqft", price:"$1,800,000", images:["images/blog4-4.jpg","images/blog4-2.jpg","images/blog4-3.jpg","images/blog4-4.jpg"]}
+  ];
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = parseInt(urlParams.get('id'));
+  const property = properties.find(p => p.id === id) || properties[0];
+
+  const slidesContainer = document.getElementById('slides');
+  property.images.forEach(img => {
+    const image = document.createElement('img');
+    image.src = img;
+    slidesContainer.appendChild(image);
+  });
+
+  document.getElementById('propertyTitle').innerText = property.title;
+  document.getElementById('propertyInfo').innerText = property.info;
+  document.getElementById('propertyPrice').innerText = `Price: ${property.price}`;
+
+  // slider logic
+  let currentIndex = 0;
+
+  function updateSlider() {
+    const slideWidth = slidesContainer.children[0].clientWidth;
+    slidesContainer.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+  }
+
+  function slideLeft() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  }
+
+  function slideRight() {
+    if (currentIndex < property.images.length - 1) {
+      currentIndex++;
+      updateSlider();
+    }
+  }
+
+  window.addEventListener('resize', updateSlider);
+</script>
+
+</body>
+</html>

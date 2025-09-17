@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+   <link rel="stylesheet" href="./css/contact.css">
+  <title>Contact - GoldenGate Estates</title>
+  <style>
+    
+
+
+
+
+
+
+
+/* Hero Section with sliding images */
+.hero {
+  position: relative;
+  text-align: center;
+  height: 100vh;   /* Full height */
+  width: 100vw;    /* Full width */
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: slide 15s infinite;
+}
+
+.hero img:nth-child(1) { animation-delay: 0s; }
+.hero img:nth-child(2) { animation-delay: 5s; }
+.hero img:nth-child(3) { animation-delay: 10s; }
+
+@keyframes slide {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+
+
+
+
+
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 40px;
+      gap: 20px;
+    }
+    .contact-info, .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .contact-info h2, .contact-form h2 {
+      margin-bottom: 15px;
+      color: #e67e22;
+    }
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    /* Form */
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      padding: 12px;
+      background: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #cf711f;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp {
+      display: inline-block;
+      margin-top: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .whatsapp:hover {
+      background: #1da851;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<nav class="gg-nav">
+  <div class="container-narrow">
+     <img src="./images/logo2.png" alt="">
+    <div class="gg-links" id="ggLinks">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="agents.html">Agents</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="gg-cta">
+      <a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i> Sign In</a>
+      <a href="List-Property.html" class="login-btn primary"><i class="fa-solid fa-plus"></i> List Property</a>
+    </div>
+    <button><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+
+
+<style>
+  /* HERO FULLSCREEN SLIDER */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full screen */
+    overflow: hidden;
+  }
+
+  .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slide 15s infinite;
+  }
+
+  /* Image delays for sliding */
+  .hero img:nth-child(1) { animation-delay: 0s; }
+  .hero img:nth-child(2) { animation-delay: 5s; }
+  .hero img:nth-child(3) { animation-delay: 10s; }
+
+  @keyframes slide {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  /* Text content inside hero */
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2; /* make sure text is above images */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+</style>
+
+
+<section class="hero">
+  <img src="images/hero1.jpg" alt="Property 1">
+  <img src="images/hero2.jpg" alt="Property 2">
+  <img src="images/hero3.jpg" alt="Property 3">
+  <div class="hero-content">
+    <h1>Our Properties</h1>
+    <p>Explore a wide range of properties available for sale and rent.</p>
+  </div>
+</section>
+
+
+<!-- 
+<section class="hero">
+  <img src="images/hero1.jpg" alt="Contact Hero 1">
+  <img src="images/hero2.jpg" alt="Contact Hero 2">
+  <img src="images/hero3.jpg" alt="Contact Hero 3">
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Get in touch with GoldenGate Estates.</p>
+  </div>
+</section> -->
+
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Email:</strong> info@goldengateestates.com</p>
+      <p><strong>Phone:</strong> +123 456 7890</p>
+      <a class="whatsapp" href="https://wa.me/1234567890" target="_blank">Chat on WhatsApp</a>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="mailto:info@goldengateestates.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  
+<footer>
+  <div class="footer-container">
+    <!-- Company Info -->
+    <div class="footer-col">
+      <img src="logo.png" alt="GoldenGate Estates" class="footer-logo">
+      <p>GoldenGate Estates is your trusted partner in real estate, providing sales, rentals, management, and investment opportunities tailored to your needs.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="list-property.html">List Property</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Our Services</h3>
+      <ul>
+        <li>Property Sales</li>
+        <li>Property Rentals</li>
+        <li>Mortgage Assistance</li>
+        <li>Property Management</li>
+        <li>Real Estate Consultancy</li>
+        <li>Interior Design</li>
+        <li>Valuation Services</li>
+        <li>Construction</li>
+        <li>Legal Support</li>
+        <li>Investment Opportunities</li>
+      </ul>
+    </div>
+<!-- Add this in <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Social Media -->
+<div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 GoldenGate Estates. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background: #222;
+    color: #ddd;
+    padding: 50px 20px 20px;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .footer-col h3 {
+    color: #e67e22;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-col ul li {
+    margin: 8px 0;
+  }
+  .footer-col ul li a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  .footer-col ul li a:hover {
+    color: #e67e22;
+  }
+  .footer-logo {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .social-links a {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+  }
+  .social-links img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+  }
+  .social-links img:hover {
+    transform: scale(1.2);
+    filter: brightness(1) invert(0) sepia(1) hue-rotate(20deg) saturate(5);
+  }
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+
+
+
+  
+
+    .social-links a {
+  display: inline-block;
+  margin: 0 10px 8px 0;
+  font-size: 24px;
+  color: #ddd;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  color: #e67e22;
+  transform: scale(1.2);
+}
+
+</style>
+
+</body>
+</html>

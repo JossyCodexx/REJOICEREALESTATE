@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - BERVIC STORE</title>
+  <link rel="stylesheet" href="css/login.css">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f4f4f4;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #0b78d1;
+    }
+
+    .login-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .login-container input[type="email"]:focus,
+    .login-container input[type="password"]:focus {
+      border-color: #0b78d1;
+      outline: none;
+    }
+
+    .login-container button {
+      padding: 12px;
+      background-color: #0b78d1;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-container button:hover {
+      background-color: #095a9d;
+    }
+
+    .login-container .options {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-container .options a {
+      color: #0b78d1;
+      text-decoration: none;
+    }
+
+    .login-container .options a:hover {
+      text-decoration: underline;
+    }
+
+    .login-container .social-login {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .login-container .social-login button {
+      width: 32%;
+      background-color: #eee;
+      color: #333;
+    }
+
+    .login-container .social-login button:hover {
+      background-color: #ddd;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to BERVIC STORE</h2>
+    <form id="loginForm">
+      <input type="email" placeholder="Email" id="email" required>
+      <input type="password" placeholder="Password" id="password" required>
+      <button type="submit">Login</button>
+
+      <div class="options">
+        <a href="#">Forgot Password?</a>
+        <a href="register.html">Sign Up</a>
+      </div>
+
+      <div class="social-login">
+       <div class="social-login">
+  <a href="https://accounts.google.com/signin" target="_blank" class="social-btn google">Google</a>
+  <a href="https://www.facebook.com/login" target="_blank" class="social-btn facebook">Facebook</a>
+  <a href="https://twitter.com/login" target="_blank" class="social-btn twitter">Twitter</a>
+  <a href="https://wa.me/1234567890" target="_blank" class="social-btn whatsapp">WhatsApp</a>
+</div>
+
+<style>
+.social-login {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-btn {
+  padding: 4px 8px;     /* Smaller padding */
+  min-width: 70px;      /* Smaller min-width */
+  text-align: center;
+  font-size: 14px;      /* Slightly smaller text */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.social-btn:hover {
+  transform: scale(1.05);
+}
+
+.google { background-color: #DB4437; }     
+.facebook { background-color: #4267B2; }  
+.twitter { background-color: #1DA1F2; }   
+.whatsapp { background-color: #25D366; }  
+</style>
+
+    </form>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      
+      // TODO: Add your authentication logic here (API call)
+      alert(`Email: ${email}\nPassword: ${password}`);
+    });
+  </script>
+</body>
+</html>

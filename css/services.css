@@ -1,0 +1,111 @@
+/* Navbar Wrapper */
+.gg-nav {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Flex container */
+.container-narrow {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.gg-nav img {
+  height: 120px;   
+  width: 20%;    
+}
+
+/* Nav Links */
+.gg-links {
+  display: flex;
+  gap: 20px;
+}
+
+.gg-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.gg-links a:hover {
+  color: goldenrod;
+}
+
+/* Call-to-Action buttons */
+.gg-cta {
+  display: flex;
+  gap: 12px;
+}
+
+.login-btn {
+  padding: 8px 14px;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: goldenrod;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: goldenrod;
+  color: #fff;
+}
+
+.login-btn.primary {
+  background: goldenrod;
+  color: #fff;
+}
+
+.login-btn.primary:hover {
+  background: #d4a017;
+  border-color: #d4a017;
+}
+
+/* Hamburger for mobile */
+#ggHamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .gg-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .gg-links.active {
+    display: flex;
+  }
+
+  #ggHamburger {
+    display: block;
+  }
+}

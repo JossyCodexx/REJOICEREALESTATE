@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - GoldenGate Estates</title>
+  <link rel="stylesheet" href="./css/agents.css">
+  <style>
+    /* HERO FULLSCREEN SLIDER */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .hero img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: slide 15s infinite;
+    }
+    .hero img:nth-child(1) { animation-delay: 0s; }
+    .hero img:nth-child(2) { animation-delay: 5s; }
+    .hero img:nth-child(3) { animation-delay: 10s; }
+
+    @keyframes slide {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 8px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+<nav class="gg-nav">
+  <div class="container-narrow">
+     <img src="./images/logo2.png" alt="">
+    <div class="gg-links" id="ggLinks">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="agents.html">Agents</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="gg-cta">
+      <a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i> Sign In</a>
+      <a href="List-Property.html" class="login-btn primary"><i class="fa-solid fa-plus"></i> List Property</a>
+    </div>
+    <button><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+
+  <!-- HERO SLIDER -->
+  <section class="hero">
+    <img src="images/hero1.jpg" alt="Blog Image 1">
+    <img src="images/hero2.jpg" alt="Blog Image 2">
+    <img src="images/hero3.jpg" alt="Blog Image 3">
+    <div class="hero-content">
+      <h1>GoldenGate Estates Blog</h1>
+      <p>Stay updated with the latest news, tips, and insights in real estate</p>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- AGENTS SECTION -->
+<section class="agents-section">
+  <h2>Meet Our Agents</h2>
+  <div class="agents-grid">
+
+    <!-- Agent 1 -->
+    <div class="agent-card">
+      <img src="images/agent1.jpg" alt="Agent 1">
+      <h3>John Smith</h3>
+      <p>Senior Real Estate Agent</p>
+      <div class="agent-links">
+        <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:johnsmith@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <a href="contact.html" class="contact-btn">Contact Agent</a>
+    </div>
+
+    <!-- Agent 2 -->
+    <div class="agent-card">
+      <img src="images/agent2.jpg" alt="Agent 2">
+      <h3>Sarah Johnson</h3>
+      <p>Property Consultant</p>
+      <div class="agent-links">
+        <a href="https://wa.me/2345678901" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:sarahjohnson@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <a href="contact.html" class="contact-btn">Contact Agent</a>
+    </div>
+
+    <!-- Agent 3 -->
+    <div class="agent-card">
+      <img src="images/agent3.jpg" alt="Agent 3">
+      <h3>Michael Brown</h3>
+      <p>Luxury Homes Specialist</p>
+      <div class="agent-links">
+        <a href="https://wa.me/3456789012" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:michaelbrown@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <a href="contact.html" class="contact-btn">Contact Agent</a>
+    </div>
+
+    <!-- Agent 4 -->
+    <div class="agent-card">
+      <img src="images/agent4.jpg" alt="Agent 4">
+      <h3>Emily Davis</h3>
+      <p>Commercial Property Expert</p>
+      <div class="agent-links">
+        <a href="https://wa.me/4567890123" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:emilydavis@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <a href="contact.html" class="contact-btn">Contact Agent</a>
+    </div>
+
+    <!-- Agent 5 -->
+    <div class="agent-card">
+      <img src="images/agent5.jpg" alt="Agent 5">
+      <h3>David Wilson</h3>
+      <p>Investment Advisor</p>
+      <div class="agent-links">
+        <a href="https://wa.me/5678901234" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:davidwilson@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <a href="contact.html" class="contact-btn">Contact Agent</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Add Font Awesome in your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
+
+
+
+
+
+
+  
+  
+<footer>
+  <div class="footer-container">
+    <!-- Company Info -->
+    <div class="footer-col">
+      <img src="logo.png" alt="GoldenGate Estates" class="footer-logo">
+      <p>GoldenGate Estates is your trusted partner in real estate, providing sales, rentals, management, and investment opportunities tailored to your needs.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="list-property.html">List Property</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Our Services</h3>
+      <ul>
+        <li>Property Sales</li>
+        <li>Property Rentals</li>
+        <li>Mortgage Assistance</li>
+        <li>Property Management</li>
+        <li>Real Estate Consultancy</li>
+        <li>Interior Design</li>
+        <li>Valuation Services</li>
+        <li>Construction</li>
+        <li>Legal Support</li>
+        <li>Investment Opportunities</li>
+      </ul>
+    </div>
+<!-- Add this in <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Social Media -->
+<div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 GoldenGate Estates. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background: #222;
+    color: #ddd;
+    padding: 50px 20px 20px;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .footer-col h3 {
+    color: #e67e22;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-col ul li {
+    margin: 8px 0;
+  }
+  .footer-col ul li a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  .footer-col ul li a:hover {
+    color: #e67e22;
+  }
+  .footer-logo {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .social-links a {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+  }
+  .social-links img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+  }
+  .social-links img:hover {
+    transform: scale(1.2);
+    filter: brightness(1) invert(0) sepia(1) hue-rotate(20deg) saturate(5);
+  }
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+
+
+
+  
+
+    .social-links a {
+  display: inline-block;
+  margin: 0 10px 8px 0;
+  font-size: 24px;
+  color: #ddd;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  color: #e67e22;
+  transform: scale(1.2);
+}
+
+</style>
+
+</body>
+</html>

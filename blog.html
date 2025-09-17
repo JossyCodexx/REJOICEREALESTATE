@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/blog.css">
+  <title>Blog - GoldenGate Estates</title>
+
+  <style>
+
+
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+   
+
+<nav class="gg-nav">
+  <div class="container-narrow">
+     <img src="./images/logo2.png" alt="">
+    <div class="gg-links" id="ggLinks">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="agents.html">Agents</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="gg-cta">
+      <a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i> Sign In</a>
+      <a href="List-Property.html" class="login-btn primary"><i class="fa-solid fa-plus"></i> List Property</a>
+    </div>
+    <button><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+
+
+
+  
+  <section class="hero">
+    <img src="images/hero1.jpg" alt="About Image 1">
+    <img src="images/hero2.jpg" alt="About Image 2">
+    <img src="images/hero3.jpg" alt="About Image 3">
+    <div class="hero-content">
+      <h1>GoldenGate Blog</h1>
+  <p>Stay updated with real estate tips, news, and trends.</p>
+    </div>
+  </section>
+  <h1>GoldenGate Blog</h1>
+  <p>Stay updated with real estate tips, news, and trends.</p> -->
+  
+  <!-- BLOG CARDS -->
+<section class="blog-section">
+  <h2 style="text-align:center; margin-bottom:30px;">Latest Articles & Properties</h2>
+  <div class="blog-grid">
+
+    <!-- CARD 1 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog1-1.jpg" alt="Property 1 Image 1">
+          <img src="images/blog1-2.jpg" alt="Property 1 Image 2">
+          <img src="images/blog1-3.jpg" alt="Property 1 Image 3">
+          <img src="images/blog1-4.jpg" alt="Property 1 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Luxury Villa</h3>
+        <p>4 Bed • 3 Bath • 3500 sqft</p>
+        <a href="property-details.html?id=1" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog2-2.jpg" alt="Property 2 Image 1">
+          <img src="images/blog2-3.jpg" alt="Property 2 Image 2">
+          <img src="images/blog2-4.jpg" alt="Property 2 Image 3">
+          <img src="images/blog2-5.jpg" alt="Property 2 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Modern Apartment</h3>
+        <p>2 Bed • 2 Bath • 1200 sqft</p>
+        <a href="property-details.html?id=2" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog3-1.jpg" alt="Property 3 Image 1">
+          <img src="images/blog3-2.jpg" alt="Property 3 Image 2">
+          <img src="images/blog3-3.jpg" alt="Property 3 Image 3">
+          <img src="images/blog3-4.jpg" alt="Property 3 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Cozy Cottage</h3>
+        <p>3 Bed • 2 Bath • 1600 sqft</p>
+        <a href="property-details.html?id=3" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog4-1.jpg" alt="Property 4 Image 1">
+          <img src="images/blog4-2.jpg" alt="Property 4 Image 2">
+          <img src="images/blog4-3.jpg" alt="Property 4 Image 3">
+          <img src="images/blog4-4.jpg" alt="Property 4 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Beach House</h3>
+        <p>5 Bed • 4 Bath • 5000 sqft</p>
+        <a href="property-details.html?id=4" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog5-1.jpg" alt="Property 5 Image 1">
+          <img src="images/blog5-2.jpg" alt="Property 5 Image 2">
+          <img src="images/blog5-3.jpg" alt="Property 5 Image 3">
+          <img src="images/blog5-4.jpg" alt="Property 5 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Downtown Condo</h3>
+        <p>1 Bed • 1 Bath • 850 sqft</p>
+        <a href="property-details.html?id=5" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog6-1.jpg" alt="Property 6 Image 1">
+          <img src="images/blog6-2.jpg" alt="Property 6 Image 2">
+          <img src="images/blog6-3.jpg" alt="Property 6 Image 3">
+          <img src="images/blog6-4.jpg" alt="Property 6 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Suburban House</h3>
+        <p>3 Bed • 2 Bath • 2100 sqft</p>
+        <a href="property-details.html?id=6" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 7 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog7-1.jpg" alt="Property 7 Image 1">
+          <img src="images/blog7-2.jpg" alt="Property 7 Image 2">
+          <img src="images/blog7-3.jpg" alt="Property 7 Image 3">
+          <img src="images/blog7-4.jpg" alt="Property 7 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Urban Loft</h3>
+        <p>2 Bed • 1 Bath • 1100 sqft</p>
+        <a href="property-details.html?id=7" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 8 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog8-1.jpg" alt="Property 8 Image 1">
+          <img src="images/blog8-2.jpg" alt="Property 8 Image 2">
+          <img src="images/blog8-3.jpg" alt="Property 8 Image 3">
+          <img src="images/blog8-4.jpg" alt="Property 8 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Family Bungalow</h3>
+        <p>4 Bed • 2 Bath • 2200 sqft</p>
+        <a href="property-details.html?id=8" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 9 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog9-1.jpg" alt="Property 9 Image 1">
+          <img src="images/blog9-2.jpg" alt="Property 9 Image 2">
+          <img src="images/blog9-3.jpg" alt="Property 9 Image 3">
+          <img src="images/blog9-4.jpg" alt="Property 9 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Garden Villa</h3>
+        <p>5 Bed • 3 Bath • 3600 sqft</p>
+        <a href="property-details.html?id=9" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 10 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog10-1.jpg" alt="Property 10 Image 1">
+          <img src="images/blog10-2.jpg" alt="Property 10 Image 2">
+          <img src="images/blog10-3.jpg" alt="Property 10 Image 3">
+          <img src="images/blog10-4.jpg" alt="Property 10 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Lakeview Home</h3>
+        <p>4 Bed • 3 Bath • 2800 sqft</p>
+        <a href="property-details.html?id=10" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 11 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog11-1.jpg" alt="Property 11 Image 1">
+          <img src="images/blog11-2.jpg" alt="Property 11 Image 2">
+          <img src="images/blog11-3.jpg" alt="Property 11 Image 3">
+          <img src="images/blog11-4.jpg" alt="Property 11 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Mountain Retreat</h3>
+        <p>3 Bed • 2 Bath • 2000 sqft</p>
+        <a href="property-details.html?id=11" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 12 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog12-1.jpg" alt="Property 12 Image 1">
+          <img src="images/blog12-2.jpg" alt="Property 12 Image 2">
+          <img src="images/blog12-3.jpg" alt="Property 12 Image 3">
+          <img src="images/blog12-4.jpg" alt="Property 12 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Studio Apartment</h3>
+        <p>1 Bed • 1 Bath • 550 sqft</p>
+        <a href="property-details.html?id=12" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 13 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog13-1.jpg" alt="Property 13 Image 1">
+          <img src="images/blog13-2.jpg" alt="Property 13 Image 2">
+          <img src="images/blog13-3.jpg" alt="Property 13 Image 3">
+          <img src="images/blog13-4.jpg" alt="Property 13 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Seaside Villa</h3>
+        <p>4 Bed • 3 Bath • 3100 sqft</p>
+        <a href="property-details.html?id=13" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 14 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog14-1.jpg" alt="Property 14 Image 1">
+          <img src="images/blog14-2.jpg" alt="Property 14 Image 2">
+          <img src="images/blog14-3.jpg" alt="Property 14 Image 3">
+          <img src="images/blog14-4.jpg" alt="Property 14 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>City Apartment</h3>
+        <p>2 Bed • 2 Bath • 1200 sqft</p>
+        <a href="property-details.html?id=14" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 15 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog15-1.jpg" alt="Property 15 Image 1">
+          <img src="images/blog15-2.jpg" alt="Property 15 Image 2">
+          <img src="images/blog15-3.jpg" alt="Property 15 Image 3">
+          <img src="images/blog15-4.jpg" alt="Property 15 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Luxury Mansion</h3>
+        <p>7 Bed • 7 Bath • 9000 sqft</p>
+        <a href="property-details.html?id=15" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 16 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog16-1.jpg" alt="Property 16 Image 1">
+          <img src="images/blog16-2.jpg" alt="Property 16 Image 2">
+          <img src="images/blog16-3.jpg" alt="Property 16 Image 3">
+          <img src="images/blog16-4.jpg" alt="Property 16 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Forest Cabin</h3>
+        <p>2 Bed • 1 Bath • 950 sqft</p>
+        <a href="property-details.html?id=16" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 17 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog17-1.jpg" alt="Property 17 Image 1">
+          <img src="images/blog17-2.jpg" alt="Property 17 Image 2">
+          <img src="images/blog17-3.jpg" alt="Property 17 Image 3">
+          <img src="images/blog17-4.jpg" alt="Property 17 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Desert Villa</h3>
+        <p>3 Bed • 2 Bath • 1700 sqft</p>
+        <a href="property-details.html?id=17" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 18 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog18-1.jpg" alt="Property 18 Image 1">
+          <img src="images/blog18-2.jpg" alt="Property 18 Image 2">
+          <img src="images/blog18-3.jpg" alt="Property 18 Image 3">
+          <img src="images/blog18-4.jpg" alt="Property 18 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Clifftop Retreat</h3>
+        <p>4 Bed • 3 Bath • 3200 sqft</p>
+        <a href="property-details.html?id=18" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 19 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog19-1.jpg" alt="Property 19 Image 1">
+          <img src="images/blog19-2.jpg" alt="Property 19 Image 2">
+          <img src="images/blog19-3.jpg" alt="Property 19 Image 3">
+          <img src="images/blog19-4.jpg" alt="Property 19 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Luxury Ranch</h3>
+        <p>6 Bed • 5 Bath • 8000 sqft</p>
+        <a href="property-details.html?id=19" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+    <!-- CARD 20 -->
+    <div class="blog-card">
+      <div class="slider">
+        <button class="prev" onclick="slideLeft(this)">&#10094;</button>
+        <div class="slides">
+          <img src="images/blog20-1.jpg" alt="Property 20 Image 1">
+          <img src="images/blog20-2.jpg" alt="Property 20 Image 2">
+          <img src="images/blog20-3.jpg" alt="Property 20 Image 3">
+          <img src="images/blog20-4.jpg" alt="Property 20 Image 4">
+        </div>
+        <button class="next" onclick="slideRight(this)">&#10095;</button>
+      </div>
+      <div class="info">
+        <h3>Skyline Penthouse</h3>
+        <p>6 Bed • 6 Bath • 7000 sqft</p>
+        <a href="property-details.html?id=20" class="view-btn">View Details</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.blog-card:hover { transform: translateY(-5px); }
+
+.blog-card .slider { position: relative; overflow: hidden; }
+.blog-card .slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.blog-card .slides img {
+  width: 100%;
+  flex-shrink: 0;
+  border-bottom: 1px solid #eee;
+}
+.blog-card .prev,
+.blog-card .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.blog-card .prev { left: 10px; }
+.blog-card .next { right: 10px; }
+
+.blog-card .info { padding: 15px; text-align: center; }
+.blog-card .info h3 { margin: 10px 0; font-size: 18px; }
+.blog-card .info p { color: #666; margin-bottom: 15px; }
+.blog-card .view-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0b78d1;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.blog-card .view-btn:hover { background: #095a9a; }
+</style>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <!-- Company Info -->
+      <div class="footer-col">
+        <img src="logo.png" alt="GoldenGate Estates" class="footer-logo">
+        <p>GoldenGate Estates is your trusted partner in real estate, providing sales, rentals, management, and investment opportunities tailored to your needs.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="agents.html">Agents</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="list-property.html">List Property</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h3>Our Services</h3>
+        <ul>
+          <li>Property Sales</li>
+          <li>Property Rentals</li>
+          <li>Mortgage Assistance</li>
+          <li>Property Management</li>
+          <li>Real Estate Consultancy</li>
+          <li>Interior Design</li>
+          <li>Valuation Services</li>
+          <li>Construction</li>
+          <li>Legal Support</li>
+          <li>Investment Opportunities</li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 GoldenGate Estates. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</body>
+</html>
